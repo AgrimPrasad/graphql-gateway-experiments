@@ -3,3 +3,15 @@ sources:
     handler:
       openapi:
         source: https://api.apis.guru/v2/specs/wikimedia.org/1.0.0/swagger.yaml
+    transforms:
+      - prefix:
+          value: Wiki_
+  - name: Cities
+    handler:
+      openapi:
+        source: https://api.apis.guru/v2/specs/mashape.com/geodb/1.0.0/swagger.json
+        operationHeaders:
+          'X-RapidAPI-Key': f93d3b393dmsh13fea7cb6981b2ep1dba0ajsn654ffeb48c26
+    transforms:
+      - prefix:
+          value: Cities_

@@ -36,3 +36,26 @@ sources:
 ```bash
 yarn graphql-mesh serve
 ```
+
+## Stitch multiple graphql schemas
+
+1. Add a transform to prefix the source to "namespace" the separate OpenAPI specifications.
+
+a. Install the `prefix` transform.
+
+```bash
+yarn add @graphql-mesh/transform-prefix
+```
+
+b. Extend the above wikipedia example with `Wiki_` prefix transform for namespacing.
+
+```yaml
+sources:
+  - name: Wiki
+    handler:
+      openapi:
+        source: https://api.apis.guru/v2/specs/wikimedia.org/1.0.0/swagger.yaml
+    transforms:
+      - prefix:
+          value: Wiki_
+```

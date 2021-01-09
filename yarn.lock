@@ -665,6 +665,17 @@
     "@graphql-tools/utils" "7.2.3"
     "@graphql-tools/wrap" "7.0.5"
 
+"@graphql-mesh/transform-prefix@^0.6.12":
+  version "0.6.12"
+  resolved "https://registry.yarnpkg.com/@graphql-mesh/transform-prefix/-/transform-prefix-0.6.12.tgz#a720b781936d86733803cd7d73034fa36c63c368"
+  integrity sha512-qORlRxopNBhEKDcVj/r6zXtK3IgbfcVYEgIpbaabwJKwGmE+iwUaSAMtpZOozJbOarDkdl74u6RnyG2zECLXrA==
+  dependencies:
+    "@graphql-mesh/types" "0.25.0"
+    "@graphql-mesh/utils" "0.8.3"
+    "@graphql-tools/delegate" "7.0.8"
+    "@graphql-tools/utils" "7.2.3"
+    "@graphql-tools/wrap" "7.0.5"
+
 "@graphql-mesh/types@0.25.0":
   version "0.25.0"
   resolved "https://registry.yarnpkg.com/@graphql-mesh/types/-/types-0.25.0.tgz#dcb8fd7bbff9c446f19d971ef5fc4ec08fd058bc"
